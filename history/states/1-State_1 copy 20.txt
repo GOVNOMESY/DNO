@@ -1,0 +1,18 @@
+state = {
+    id = 15
+    name = "STATE_15"
+    manpower = 1
+
+    state_category = pastoral
+
+    history = {
+        owner = SAD
+        
+        add_core_of = SAD
+    }
+
+    provinces = {
+        1667 5593 6353 7463 9428 9888 11032 16431 16540 
+    }
+
+}
