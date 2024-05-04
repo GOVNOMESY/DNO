@@ -1,18 +1,18 @@
 state = {
-    id = 19
-    name = "STATE_19"
-    manpower = 1
+	id = 19
+	name = "STATE_19"
+	manpower = 1
 
-    state_category = pastoral
+	state_category = pastoral
 
-    history = {
-        owner = SAD
-        
-        add_core_of = SAD
-    }
+	provinces = {
+		501 539 700 1501 1581 2239 2833 3027 3529 4721 5352 5727 5736 5809 7462 8099 8396 9263 9401 9816 10292 10337 10772 10834 11270 11317 11717 15677 15818 15880 15980 15981 16017 16136 16163 16230 16255 
+	}
 
-    provinces = {
-        2833 5785 7120 7462 9263 9401 10337 10772 11270 11317 11654 15927 15981 16017 16094 
-    }
+	history = {
+		owner = UPA
+		
+		add_core_of = UPA
+	}
 
 }

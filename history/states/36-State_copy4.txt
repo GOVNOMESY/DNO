@@ -1,0 +1,18 @@
+state = {
+	id = 41
+	name = "STATE_41"
+	manpower = 1
+
+	state_category = pastoral
+
+	provinces = {
+		137 673 725 740 1669 2977 7779 8244 8627 9496 9913 10232 15493 15541 15601 
+	}
+
+	history = {
+		owner = SV1
+		
+		add_core_of = SV1
+	}
+
+}

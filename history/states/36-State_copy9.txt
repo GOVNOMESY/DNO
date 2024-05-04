@@ -1,0 +1,18 @@
+state = {
+	id = 44
+	name = "STATE_44"
+	manpower = 1
+
+	state_category = pastoral
+
+	provinces = {
+		194 4995 5982 11366 15453 15474 
+	}
+
+	history = {
+		owner = UPA
+		
+		add_core_of = UPA
+	}
+
+}
