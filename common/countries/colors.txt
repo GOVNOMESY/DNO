@@ -17,6 +17,16 @@ UPA = {
 	color_ui = rgb { 65 105 225 }
 } 
 
+LI2 = {
+	color = rgb { 100 100 56 }
+	color_ui = rgb { 100 100 56 }
+} 
+
+DNO = {
+	color = rgb { 53 71 100 }
+	color_ui = rgb { 53 71 100 }
+} 
+
 D01 = {
 	color = rgb { 122 179 97 }
 	color_ui = rgb { 159 233 126 }

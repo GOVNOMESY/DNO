@@ -1,0 +1,47 @@
+spriteTypes = {
+#leaders
+	spriteType = {
+		name = "GFX_ANA_Yura"
+		texturefile = "gfx/leaders/ANA/ANA_Yura.png"
+	}
+
+	spriteType = {
+		name = "GFX_DNO_Kuchma"
+		texturefile = "gfx/leaders/DNO/DNO_Kuchma.png"
+	}
+
+	spriteType = {
+		name = "GFX_LI2_Andrey_Byriy"
+		texturefile = "gfx/leaders/LI2/LI2_Andrey_Byriy.png"
+	}
+
+	spriteType = {
+		name = "GFX_SAD_Anton"
+		texturefile = "gfx/leaders/SAD/SAD_Anton.png"
+	}
+
+	spriteType = {
+		name = "GFX_SPO_Nazar"
+		texturefile = "gfx/leaders/SPO/SPO_Nazar.png"
+	}
+
+	spriteType = {
+		name = "GFX_SPO_Kirill"
+		texturefile = "gfx/leaders/SPO/SPO_Kirill.png"
+	}
+
+	spriteType = {
+		name = "GFX_SPO_Kirill_Victory"
+		texturefile = "gfx/leaders/SPO/SPO_Kirill_Victory.png"
+	}
+
+	spriteType = {
+		name = "GFX_UPA_Zelensky"
+		texturefile = "gfx/leaders/UPA/UPA_Zelensky.png"
+	}
+
+	spriteType = {
+		name = "GFX_SV1_Dima"
+		texturefile = "gfx/leaders/SV1/SV1_Dima.png"
+	}
+}

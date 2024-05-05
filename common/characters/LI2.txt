@@ -1,0 +1,17 @@
+characters = {
+	LI2_Andrey_Byriy = {
+		name = LI2_Andrey_Byriy
+		portraits = {
+			civilian = {
+				large = GFX_LI2_Andrey_Byriy
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {
+			
+			}
+		}
+	}
+}
+	

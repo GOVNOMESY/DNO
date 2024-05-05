@@ -34,7 +34,8 @@ set_technology = {
 	dispersed_industry = 1
 	dispersed_industry2 = 1
 }
-
+recruit_character = SPO_Kirill
+recruit_character = SPO_Nazar
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"
@@ -47,24 +48,4 @@ set_popularities = {
 	fascism = 0
 	communism = 70
 	neutrality = 10
-}
-
-create_country_leader = {
-	name = "kiril"
-	desc = ""
-	picture = "kiril.dds"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-	
-	create_country_leader = {
-	name = "nazar"
-	desc = ""
-	picture = "nazar.dds"
-	ideology = socialism
-	traits = {
-		#
-	}
 }

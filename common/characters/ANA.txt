@@ -1,0 +1,17 @@
+characters = {
+	ANA_Yura = {
+		name = ANA_Yura
+		portraits = {
+			civilian = {
+				large = GFX_ANA_Yura
+			}
+		}
+		country_leader = {
+			ideology = anarchism
+			traits = {
+			
+			}
+		}
+	}
+}
+	

@@ -1,0 +1,17 @@
+characters = {
+	UPA_Zelensky = {
+		name = UPA_Zelensky
+		portraits = {
+			civilian = {
+				large = GFX_UPA_Zelensky
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {
+			
+			}
+		}
+	}
+}
+	

@@ -1,0 +1,31 @@
+characters = {
+	SPO_Nazar = {
+		name = SPO_Nazar
+		portraits = {
+			civilian = {
+				large = GFX_SPO_Nazar
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {
+			
+			}
+		}
+	}
+	SPO_Kirill = {
+		name = SPO_Kirill
+		portraits = {
+			civilian = {
+				large = GFX_SPO_Kirill
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {
+			
+			}
+		}
+	}
+}
+	

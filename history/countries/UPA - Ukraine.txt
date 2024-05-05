@@ -32,7 +32,7 @@ set_technology = {
 	dispersed_industry = 1
 	dispersed_industry2 = 1
 }
-
+recruit_character = UPA_Zelensky
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -45,14 +45,4 @@ set_popularities = {
 	fascism = 0
 	communism = 0
 	neutrality = 99
-}
-
-create_country_leader = {
-	name = "Pan Zelensky"
-	desc = ""
-	picture = "zeleboba.dds"
-	ideology = oligarchism
-	traits = {
-		#
-	}
 }

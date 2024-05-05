@@ -1,0 +1,17 @@
+characters = {
+	SV1_Dima = {
+		name = SV1_Dima
+		portraits = {
+			civilian = {
+				large = GFX_SV1_Dima
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {
+			
+			}
+		}
+	}
+}
+	

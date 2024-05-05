@@ -1,4 +1,4 @@
-﻿capital = 9
+﻿capital = 71
 
 
 set_convoys = 1
@@ -34,7 +34,7 @@ set_convoys = 1
 		dispersed_industry2 = 1
 	}
 
-recruit_character = ANA_Yura
+recruit_character = DNO_kuchma
 
 set_politics = {
 	ruling_party = neutrality

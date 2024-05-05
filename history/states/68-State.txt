@@ -1,12 +1,12 @@
 state = {
-	id = 67
-	name = "STATE_67"
+	id = 68
+	name = "STATE_68"
 	manpower = 1
 
 	state_category = pastoral
 
 	provinces = {
-		18101
+		1036 4731 11445 15247 15262 15346 
 	}
 
 	history = {

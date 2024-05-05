@@ -1,0 +1,17 @@
+characters = {
+	DNO_Kuchma = {
+		name = DNO_Kuchma
+		portraits = {
+			civilian = {
+				large = GFX_DNO_Kuchma
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {
+			
+			}
+		}
+	}
+}
+	

@@ -1,0 +1,17 @@
+characters = {
+	SAD_Anton = {
+		name = SAD_Anton
+		portraits = {
+			civilian = {
+				large = GFX_SAD_Anton
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {
+			
+			}
+		}
+	}
+}
+	
