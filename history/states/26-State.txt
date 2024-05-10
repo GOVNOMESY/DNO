@@ -6,7 +6,7 @@ state = {
 	state_category = pastoral
 
 	provinces = {
-		521 2112 4101 4442 6569 7120 10260 10630 11195 18099 
+		521 2112 6569 7120 10260 11195 18099 
 	}
 
 	history = {

@@ -1,14 +1,29 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "GATHERING_STORM_DESC"
+		name = "DNO_NAME"
+		desc = "DNO_DESC"
 		date = 2021.4.3.12
 		picture = "GFX_select_date_1936"
-		default_country = "---"
+		default_country = "SPO"
 		default = yes
 
+		"SPO"={
+			history = "SPO_DNO_DESC"
+			ideology = communism
+		}
+
+		"ANA"={
+			history = "ANA_DNO_DESC"
+			ideology = neutrality
+		}
+
+		"SAD"={
+			history = "SAD_DNO_DESC"
+			ideology = democratic
+		}
+
 		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "OTHER_DNO_DESC"
 		}
 
 		effect = {

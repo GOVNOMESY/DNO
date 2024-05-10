@@ -36,6 +36,8 @@ set_convoys = 1
 
 recruit_character = DNO_kuchma
 
+add_ideas = DNO_corruption
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

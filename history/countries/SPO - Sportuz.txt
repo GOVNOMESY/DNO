@@ -34,8 +34,12 @@ set_technology = {
 	dispersed_industry = 1
 	dispersed_industry2 = 1
 }
+add_ideas = SPO_bogdan
+add_ideas = SPO_hoi_players
 recruit_character = SPO_Kirill
 recruit_character = SPO_Nazar
+recruit_character = SPO_Anton
+recruit_character = SPO_Bogdan
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"

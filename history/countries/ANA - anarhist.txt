@@ -36,6 +36,8 @@ set_convoys = 1
 
 recruit_character = ANA_Yura
 
+
+add_ideas = ANA_LEAVE_ME_ALONE
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

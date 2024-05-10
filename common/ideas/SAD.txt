@@ -1,0 +1,87 @@
+ideas = {
+
+	country = {
+
+		SAD_sword = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+
+			
+			modifier = {
+				army_attack_factor = 0.06
+			}
+		}
+
+		SAD_shield = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+
+			
+			modifier = {
+				army_defence_factor = 0.06
+			}
+		}
+
+		SAD_2_mans_1_country = {
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+	
+				
+			modifier = {
+				stability_factor = 0.9
+				production_speed_buildings_factor = 0.1
+				drift_defence_factor = 0.8
+			}
+		}
+
+		SAD_worms_armageddon = {
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+	
+				
+			modifier = {
+				stability_weekly_factor = -0.02
+			}
+		}
+				
+	}
+				
+	
+
+}

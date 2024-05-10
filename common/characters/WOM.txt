@@ -1,0 +1,17 @@
+characters = {
+	WOM_NH2 = {
+		name = WOM_NH2
+		portraits = {
+			civilian = {
+				large = GFX_WOM_NH2
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {
+			
+			}
+		}
+	}
+}
+	

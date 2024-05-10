@@ -1,0 +1,18 @@
+state = {
+	id = 74
+	name = "STATE_74"
+	manpower = 1
+
+	state_category = pastoral
+
+	provinces = {
+		735 1260 2877 9284 13116 13152 13173 
+	}
+
+	history = {
+		owner = PID
+		
+		add_core_of = PID
+	}
+
+}

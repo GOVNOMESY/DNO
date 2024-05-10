@@ -1,0 +1,18 @@
+state = {
+	id = 76
+	name = "STATE_76"
+	manpower = 1
+
+	state_category = pastoral
+
+	provinces = {
+		191 1969 4085 5561 6309 11335 17100 17222 
+	}
+
+	history = {
+		owner = DNO
+		
+		add_core_of = DNO
+	}
+
+}

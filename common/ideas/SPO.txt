@@ -1,0 +1,80 @@
+ideas = {
+
+	country = {
+
+		SPO_hoi_players = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+
+			
+			modifier = {
+				mobilization_speed = 0.3
+				monthly_population = -0.3
+				war_support_factor = 0.25
+				training_time_army_factor = 0.15
+				army_morale_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+
+			}
+		}
+
+		SPO_bogdan = {
+			
+			allowed = {
+				always = no
+			}
+			on_remove = {
+				SPO = {
+					add_ideas = SPO_no_bogdan
+				}	
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+
+			
+			modifier = {
+				hidden_modifier = {
+					production_speed_buildings_factor = 0.2
+				}
+				custom_modifier_tooltip = SPO_bogdan_tt
+			}
+		}
+
+		SPO_no_bogdan = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+
+			
+			modifier = {
+				hidden_modifier = {
+					production_speed_buildings_factor = -1
+				}
+				custom_modifier_tooltip = SPO_no_bogdan_tt
+			}
+		}
+				
+	}
+	
+
+}

@@ -36,6 +36,21 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_SPO_Anton"
+		texturefile = "gfx/leaders/SPO/SPO_Anton.png"
+	}
+
+	spriteType = {
+		name = "GFX_SPO_Anton_Soc_Dem"
+		texturefile = "gfx/leaders/SPO/SPO_Anton_Soc_Dem.png"
+	}
+
+	spriteType = {
+		name = "GFX_SPO_Bogdan"
+		texturefile = "gfx/leaders/SPO/SPO_Bogdan.png"
+	}
+
+	spriteType = {
 		name = "GFX_UPA_Zelensky"
 		texturefile = "gfx/leaders/UPA/UPA_Zelensky.png"
 	}
@@ -44,4 +59,20 @@ spriteTypes = {
 		name = "GFX_SV1_Dima"
 		texturefile = "gfx/leaders/SV1/SV1_Dima.png"
 	}
+
+	spriteType = {
+		name = "GFX_WOM_NH2"
+		texturefile = "gfx/leaders/WOM/WOM_NH2.png"
+	}
+
+	spriteType = {
+		name = "GFX_PID_IDINAHUI"
+		texturefile = "gfx/leaders/PID/PID_IDINAHUI.png"
+	}
+
+	spriteType = {
+		name = "GFX_GIP_Gipsy"
+		texturefile = "gfx/leaders/GIP/GIP_Gipsy.png"
+	}
+	
 }

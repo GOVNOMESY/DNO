@@ -27,5 +27,29 @@ characters = {
 			}
 		}
 	}
+
+	SPO_Anton = {
+		name = SPO_Anton
+		portraits = {
+			civilian = {
+				large = GFX_SPO_Anton
+			}
+		}
+	}
+
+	SPO_Bogdan = {
+		name = SPO_Bogdan
+		portraits = {
+			civilian = {
+				large = GFX_SPO_Bogdan
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+			
+			}
+		}
+	}
 }
 	

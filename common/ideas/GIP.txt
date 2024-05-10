@@ -1,0 +1,22 @@
+ideas = {
+    country = {
+        GIP_Gipsy_Wars = {
+            picture = complete_isolation
+
+            allowed = {
+                always = yes
+            }
+
+            modifier = {
+                surrender_limit = -0.9
+                production_speed_buildings_factor = -1
+                production_factory_max_efficiency_factor = -1
+                stability_factor = -1
+                war_support_factor = -1
+                army_attack_factor = -0.9
+                army_defence_factor = -0.9
+				land_doctrine_cost_factor = 0.95
+            }
+        } 
+    }
+}

@@ -1,0 +1,17 @@
+characters = {
+	GIP_Gipsy = {
+		name = GIP_Gipsy
+		portraits = {
+			civilian = {
+				large = GFX_GIP_Gipsy
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {
+			
+			}
+		}
+	}
+}
+	

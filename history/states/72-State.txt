@@ -1,0 +1,18 @@
+state = {
+	id = 72
+	name = "STATE_72"
+	manpower = 1
+
+	state_category = pastoral
+
+	provinces = {
+		4101 4442 10630 
+	}
+
+	history = {
+		owner = WOM
+		
+		add_core_of = WOM
+	}
+
+}

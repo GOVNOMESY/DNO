@@ -1,0 +1,17 @@
+characters = {
+	PID_IDINAHUI = {
+		name = PID_IDINAHUI
+		portraits = {
+			civilian = {
+				large = GFX_PID_IDINAHUI
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {
+			
+			}
+		}
+	}
+}
+	
