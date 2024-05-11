@@ -1,0 +1,310 @@
+focus_tree = {
+	id = SPO_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 40
+			tag = SPO
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 2000
+		y = 0
+	}
+#Uno
+    focus = {
+		id = SPO_uno_elections
+		icon = GFX_SPO_uno_elections
+		x = 5
+		y = 0
+		cost = 212.6
+		allow_branch = {
+			NOT = {
+				has_country_flag = SPO_uno_elections_flag
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = {
+				id = spo.0
+				days = 0
+			}
+		}
+	}
+	focus = {
+		id = SPO_Nazar_victory
+		icon = GFX_SPO_Nazar_victory
+		relative_position_id = SPO_uno_elections
+		x = -5
+		y = 1
+		cost = 1
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = SPO_uno_elections
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_politics = {
+					ruling_party = democratic
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				set_popularities = {
+					democratic = 70
+					fascism = 10
+					communism = 20
+					neutrality = 0
+				}	
+			}
+			custom_effect_tooltip = SPO_uno_elections_Nazar_tt
+		}
+	}
+	focus = {
+		id = SPO_Kirill_victory
+		icon = GFX_SPO_Kirill_victory
+		relative_position_id = SPO_uno_elections
+		x = 0
+		y = 1
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = SPO_uno_elections
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_politics = {
+					ruling_party = communism
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				set_popularities = {
+					democratic = 10
+					fascism = 0
+					communism = 90
+					neutrality = 0
+				}	
+			}
+			custom_effect_tooltip = SPO_uno_elections_Kirill_tt
+		}
+	}
+	focus = {
+		id = SPO_Bogdan_victory
+		icon = GFX_SPO_Bogdan_victory
+		relative_position_id = SPO_uno_elections
+		x = 5
+		y = 1
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = SPO_uno_elections
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_politics = {
+					ruling_party = fascism
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				set_popularities = {
+					democratic = 10
+					fascism = 40
+					communism = 50
+					neutrality = 00
+				}	
+			}
+			custom_effect_tooltip = SPO_uno_elections_Bogdan_tt
+		}
+	}
+#Shared
+	focus = {
+		id = SPO_build_oven
+		icon = GFX_SPO_build_oven
+		x = 5
+		y = 0
+		allow_branch = {
+			has_country_flag = SPO_uno_elections_flag
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					9
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = SPO_govnotechka_bridge
+		icon = GFX_SPO_govnotechka_bridge
+		x = -2
+		y = 1
+		relative_position_id = SPO_build_oven
+		prerequisite = {
+			focus = SPO_build_oven
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					9
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPO_stone_development
+		icon = GFX_SPO_stone_development
+		x = 0
+		y = 1
+		relative_position_id = SPO_build_oven
+		prerequisite = {
+			focus = SPO_build_oven
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = {
+					9
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = SPO_kirpichka_colony
+		icon = GFX_SPO_kirpichka_colony
+		x = 2
+		y = 1
+		relative_position_id = SPO_build_oven
+		prerequisite = {
+			focus = SPO_build_oven
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			28 = {
+				transfer_state_to = SPO
+				add_core_of = SPO
+			}
+		}
+	}
+
+	focus = {
+		id = SPO_Sad_explored
+		icon = GFX_SPO_Sad_explored
+		x = 0
+		y = 1
+		relative_position_id = SPO_stone_development
+		prerequisite = {
+			focus = SPO_stone_development
+		}
+		prerequisite = {
+			focus = SPO_govnotechka_bridge
+		}
+		prerequisite = {
+			focus = SPO_kirpichka_colony
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = SAD
+				modifier = SAD_we_are_explored
+			}
+			SAD = {
+				add_opinion_modifier = {
+					target = SPO
+					modifier = SAD_we_are_explored
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							SPO_Bogdan = {
+								is_country_leader = yes
+							}
+						}
+					}
+					country_event = {
+						id = spo.1
+						days = 1
+					}
+				}
+			}
+		}
+	}
+#bogdan revolution
+	focus = {
+		id = SPO_Bogdan_revolution
+		icon = GFX_SPO_Bogdan_revolution
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		allow_branch = {
+			has_country_flag = SPO_no_bogdan_flag
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			custom_effect_tooltip = SPO_Bogdan_revolution_tt
+		}
+	}
+}
