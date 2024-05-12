@@ -34,7 +34,7 @@ set_technology = {
 }
 recruit_character = SV1_Dima
 
-add_ideas = SV1_Gipsy_Wars
+add_ideas = SV1_gypsy_Wars
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

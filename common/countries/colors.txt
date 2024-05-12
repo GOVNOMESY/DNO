@@ -37,7 +37,7 @@ PID = {
 	color_ui = rgb { 127 255 0 }
 } 
 
-GIP = {
+gyp = {
 	color = rgb { 137 123 0 }
 	color_ui = rgb { 137 123 0 }
 }

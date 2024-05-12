@@ -32,9 +32,9 @@ set_technology = {
 	dispersed_industry = 1
 	dispersed_industry2 = 1
 }
-recruit_character = GIP_Gipsy
+recruit_character = gyp_gypsy
 
-add_ideas = GIP_Gipsy_Wars
+add_ideas = gyp_gypsy_Wars
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

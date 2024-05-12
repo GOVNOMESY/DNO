@@ -71,8 +71,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_GIP_Gipsy"
-		texturefile = "gfx/leaders/GIP/GIP_Gipsy.png"
+		name = "GFX_gyp_gypsy"
+		texturefile = "gfx/leaders/gyp/gyp_gypsy.png"
 	}
 	
 }

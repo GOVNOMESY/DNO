@@ -1,6 +1,6 @@
 ideas = {
     country = {
-        SV1_Gipsy_Wars = {
+        SV1_gypsy_Wars = {
             picture = complete_isolation
 
             allowed = {

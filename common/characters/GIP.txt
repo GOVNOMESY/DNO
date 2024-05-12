@@ -1,9 +1,9 @@
 characters = {
-	GIP_Gipsy = {
-		name = GIP_Gipsy
+	gyp_gypsy = {
+		name = gyp_gypsy
 		portraits = {
 			civilian = {
-				large = GFX_GIP_Gipsy
+				large = GFX_gyp_gypsy
 			}
 		}
 		country_leader = {

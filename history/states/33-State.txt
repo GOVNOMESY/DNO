@@ -10,9 +10,9 @@ state = {
 	}
 
 	history = {
-		owner = GIP
+		owner = gyp
 		
-		add_core_of = GIP
+		add_core_of = gyp
 	}
 
 }
