@@ -3,6 +3,8 @@ ideas = {
 	country = {
 
 		DNO_corruption = {
+		
+			picture = DNO_corruption
 			
 			allowed = {
 				always = no

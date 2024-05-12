@@ -4,6 +4,8 @@ ideas = {
 
 		SPO_hoi_players = {
 			
+			picture = SPO_hoiplayers
+			
 			allowed = {
 				always = no
 			}
@@ -27,7 +29,9 @@ ideas = {
 			}
 		}
 
-		SPO_bogdan = {
+		SPO_bogdan = {		
+		
+			picture = SPO_bogdan
 			
 			allowed = {
 				always = no
@@ -54,6 +58,8 @@ ideas = {
 		}
 
 		SPO_no_bogdan = {
+				
+			picture = SPO_no_bogdan
 			
 			allowed = {
 				always = no

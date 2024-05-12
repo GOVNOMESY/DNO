@@ -4,6 +4,8 @@ ideas = {
 
 		SAD_sword = {
 			
+			picture = sworda
+			
 			allowed = {
 				always = no
 			}
@@ -23,6 +25,8 @@ ideas = {
 
 		SAD_shield = {
 			
+			picture = shielda
+			
 			allowed = {
 				always = no
 			}
@@ -41,6 +45,8 @@ ideas = {
 		}
 
 		SAD_2_mans_1_country = {
+			
+			picture = two_mens
 			
 			allowed = {
 				always = no
@@ -62,6 +68,8 @@ ideas = {
 		}
 
 		SAD_worms_armageddon = {
+						
+			picture = SAD_worms_armageddon
 			
 			allowed = {
 				always = no

@@ -1,7 +1,7 @@
 ideas = {
     country = {
         GYP_gypsy_Wars = {
-            picture = complete_isolation
+            picture = gypsy_victory
 
             allowed = {
                 always = yes

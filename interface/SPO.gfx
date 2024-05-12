@@ -1,15 +1,15 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_SPO_XXX_focus"
-		texturefile = "gfx/interface/goals/SPO/SPO_XXX.png"
+		name = "GFX_SPO_uno_elections"
+		texturefile = "gfx/interface/goals/SPO/SPO_uno.png"
 	}
 
     spriteType = {
-        name = "GFX_SPO_XXX_shine"
-        texturefile = "gfx/interface/goals/SPO/SPO_XXX.png"
+        name = "GFX_SPO_uno_elections_shine"
+        texturefile = "gfx/interface/goals/SPO/SPO_uno.png"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
-            animationmaskfile = "gfx/interface/goals/RUS/RUS_XXX.png"            
+            animationmaskfile = "gfx/interface/goals/SPO/SPO_uno.png"            
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
             animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
             animationlooping = no            # yes or no ;)
@@ -22,7 +22,153 @@ spriteTypes = {
         }
 
         animation = {
-            animationmaskfile = "gfx/interface/goals/SPO/SPO_XXX.png"            
+            animationmaskfile = "gfx/interface/goals/SPO/SPO_uno.png"            
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+	spriteType = {
+		name = "GFX_SPO_Nazar_victory"
+		texturefile = "gfx/interface/goals/SPO/SPO_nazar_uno.png"
+	}
+
+    spriteType = {
+        name = "GFX_SPO_Nazar_victory_shine"
+        texturefile = "gfx/interface/goals/SPO/SPO_nazar_uno.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SPO/SPO_nazar_uno.png"            
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SPO/SPO_nazar_uno.png"            
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+		spriteType = {
+		name = "GFX_SPO_Kirill_victory"
+		texturefile = "gfx/interface/goals/SPO/SPO_kirill_uno.png"
+	}
+
+    spriteType = {
+        name = "GFX_SPO_Kirill_victory_shine"
+        texturefile = "gfx/interface/goals/SPO/SPO_kirill_uno.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SPO/SPO_kirill_uno.png"            
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SPO/SPO_kirill_uno.png"            
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+	
+			spriteType = {
+		name = "GFX_SPO_Bogdan_victory"
+		texturefile = "gfx/interface/goals/SPO/SPO_bogdan_uno.png"
+	}
+	
+	 spriteType = {
+        name = "GFX_SPO_Bogdan_victory_shine"
+        texturefile = "gfx/interface/goals/SPO/SPO_bogdan_uno.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SPO/SPO_bogdan_uno.png"            
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SPO/SPO_bogdan_uno.png"            
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+        legacy_lazy_load = no
+    }
+	
+				spriteType = {
+		name = "GFX_SPO_stone_development"
+		texturefile = "gfx/interface/goals/SPO/SPO_stone_development.png"
+	}
+	
+	 spriteType = {
+        name = "GFX_SPO_stone_development"
+        texturefile = "gfx/interface/goals/SPO/SPO_stone_development.png"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SPO/SPO_stone_development.png"            
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = no            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 } 
+        }
+
+        animation = {
+            animationmaskfile = "gfx/interface/goals/SPO/SPO_stone_development.png"            
             animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
             animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
             animationlooping = no            # yes or no ;)

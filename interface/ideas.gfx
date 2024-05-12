@@ -1,0 +1,50 @@
+spriteTypes = {	
+
+
+
+	spriteType = {
+		name = "GFX_idea_DNO_corruption"
+		texturefile = "gfx/interface/ideas/corruption_kuchma.png"
+	}
+		spriteType = {
+		name = "GFX_idea_SPO_hoiplayers"
+		texturefile = "gfx/interface/ideas/hoi_players.png"
+		
+	}	spriteType = {
+		name = "GFX_idea_SPO_bogdan"
+		texturefile = "gfx/interface/ideas/bogdan_yes.png"
+		
+	}	spriteType = {
+		name = "GFX_idea_SPO_no_bogdan"
+		texturefile = "gfx/interface/ideas/bogdan_no.png"
+		
+	}	spriteType = {
+		name = "GFX_idea_ANA_leave_me_alone"
+		texturefile = "gfx/interface/ideas/anarchist_angry.png"
+		
+	}	spriteType = {
+		name = "GFX_idea_SAD_worms_armageddon"
+		texturefile = "gfx/interface/ideas/worms_armageddon.png"
+	}
+		spriteType = {
+		name = "GFX_idea_sworda"
+		texturefile = "gfx/interface/ideas/sworda.png"
+		
+	}	spriteType = {
+		name = "GFX_idea_shielda"
+		texturefile = "gfx/interface/ideas/shielda.png"
+		
+	}	spriteType = {
+		name = "GFX_idea_two_mens"
+		texturefile = "gfx/interface/ideas/two_mens.png"
+	}
+		spriteType = {
+		name = "GFX_idea_gypsy_victory"
+		texturefile = "gfx/interface/ideas/gypsy_victory.png"
+		
+	}	spriteType = {
+		name = "GFX_idea_gypsy_zrada"
+		texturefile = "gfx/interface/ideas/gypsy_zrada.png"
+	}
+	
+}

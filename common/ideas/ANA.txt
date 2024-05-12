@@ -3,6 +3,8 @@ ideas = {
 	country = {
 
 		ANA_LEAVE_ME_ALONE = {
+		
+			picture = ANA_leave_me_alone
 			
 			allowed = {
 				always = no
