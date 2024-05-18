@@ -228,7 +228,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SPO_build_oven
 		}
-		cost = 1
+		cost = 0.5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -255,7 +255,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SPO_kirpichka_colony
 		}
-		cost = 1
+		cost = 0.5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -305,6 +305,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = SPO_Bogdan_revolution_tt
+			hidden_effect = {
+				28 = {
+					transfer_state_to = UPA
+				}
+			}
 		}
 	}
 }

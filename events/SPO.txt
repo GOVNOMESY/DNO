@@ -53,6 +53,7 @@ country_event = {
 				remove_idea = SPO_bogdan
 				add_idea = SPO_no_bogdan
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		custom_effect_tooltip = SPO_without_bogdan_tt
 	}
@@ -65,6 +66,7 @@ country_event = {
 				remove_idea = SPO_bogdan
 				add_idea = SPO_no_bogdan
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		custom_effect_tooltip = SPO_bogdan_sorry_tt
 	}
