@@ -10,8 +10,16 @@
 
 opinion_modifiers = {
 
-	SAD_we_are_explored = {
+	SAD_we_are_explored_opinion_modifier = {
 		value = 25
+	}
+
+	anti_Bogdan_propaganda_opinion_modifier = {
+		value = -30
+	}
+
+	Bogdan_stalking_opinion_modifier = {
+		value = -25
 	}
 	
 }

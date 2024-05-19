@@ -1,0 +1,8 @@
+SPO_loyalty_test_category = {
+	icon = SPO_loyalty_test_category_icon
+	priority = 90
+	allowed = {
+		tag = SPO
+		has_completed_focus = SPO_loyalty_test
+	}
+}
