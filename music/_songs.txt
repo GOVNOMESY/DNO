@@ -1,0 +1,19 @@
+
+music_station = "base_music"
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.1
+		}		
+	}
+}
+music = {
+	song = "realhit"
+	chance = {
+		modifier = {
+			factor = 0.1
+		}		
+	}
+}

@@ -4,13 +4,39 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_SPO_Nazar
+				small = GFX_SPO_Nazar_small
+			}
+			army = {
+				large = GFX_SPO_Nazar
+				small = GFX_SPO_Nazar_small
 			}
 		}
 		country_leader = {
 			ideology = liberalism
 			traits = {
-			
+				investor_trait
 			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPO_Nazar
+			traits = { 
+				investor_trait
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = SPO_Nazar_army
+			traits = { 
+				army_chief_defensive_2
+			}
+			cost = 0
 		}
 	}
 	SPO_Kirill = {
@@ -18,12 +44,39 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_SPO_Kirill
+				small = GFX_SPO_Kirill_small
+			}
+			army = {
+				large = GFX_SPO_Kirill
+				small = GFX_SPO_Kirill_small
 			}
 		}
 		country_leader = {
 			ideology = stalinism
 			traits = {
-			
+				propaganda_expert
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPO_Kirill
+			traits = { 
+				propaganda_expert
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+			cost = 0
+		}
+
+		advisor = {
+			slot = army_chief
+			ledger = army
+			idea_token = SPO_Kirill_army
+			traits = { 
+				army_chief_offensive_2
 			}
 		}
 	}
@@ -34,7 +87,11 @@ characters = {
 			civilian = {
 				large = GFX_SPO_Anton
 			}
+			army = {
+				large = GFX_SPO_Anton
+			}
 		}
+		
 	}
 
 	SPO_Bogdan = {
@@ -42,12 +99,61 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_SPO_Bogdan
+				small = GFX_SPO_Bogdan_small
+			}
+			army = {
+				large = GFX_SPO_Bogdan
 			}
 		}
 		country_leader = {
 			ideology = fascism_ideology
 			traits = {
+				captain_of_industry
+			}
 			
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPO_Bogdan
+			traits = { 
+				captain_of_industry
+			}
+			available = {
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+	}
+
+	SPO_Arsen = {
+		name = SPO_Arsen
+		portraits = {
+			civilian = {
+				small = GFX_SPO_Arsen_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPO_Arsen
+			traits = { 
+				roblox_player_trait
+			}
+		}
+	}
+
+	SPO_Vasya = {
+		name = SPO_Vasya
+		portraits = {
+			civilian = {
+				small = GFX_SPO_Vasya_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SPO_Vasya
+			traits = { 
+				head_of_intelligence
 			}
 		}
 	}

@@ -51,6 +51,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_SPO_Arsen_small"
+		texturefile = "gfx/leaders/SPO/SPO_Arsen_small.png"
+	}
+
+	spriteType = {
+		name = "GFX_SPO_Vasya_small"
+		texturefile = "gfx/leaders/SPO/SPO_Vasya_small.png"
+	}
+
+	spriteType = {
 		name = "GFX_UPA_Zelensky"
 		texturefile = "gfx/leaders/UPA/UPA_Zelensky.png"
 	}

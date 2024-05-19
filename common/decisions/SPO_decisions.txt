@@ -1,0 +1,86 @@
+SPO_loyalty_test_category = {
+	SPO_loyalty_test_Nazar = {
+		icon = generic_formable_nations
+		fire_only_once = yes
+		available = {
+			SPO_Nazar = {
+				is_advisor = yes
+			}
+		}
+		visible = {
+			SPO_Nazar = {
+				is_advisor = yes
+			}
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = SPO_loyalty_test_Nazar_tt
+		}
+		ai_will_do = {
+			factor = 0
+		}	
+    }
+	SPO_loyalty_test_Kirill = {
+		icon = generic_formable_nations
+		fire_only_once = yes
+		available = {
+			SPO_Kirill = {
+				is_advisor = yes
+			}
+		}
+		visible = {
+			SPO_Kirill = {
+				is_advisor = yes
+			}
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = SPO_loyalty_test_Kirill_tt
+		}
+		ai_will_do = {
+			factor = 0
+		}	
+    }
+	SPO_loyalty_test_Arsen = {
+		icon = generic_formable_nations
+		fire_only_once = yes
+		available = {
+			SPO_Arsen = {
+				is_advisor = yes
+			}
+		}
+		visible = {
+			SPO_Arsen = {
+				is_advisor = yes
+			}
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = SPO_loyalty_test_Arsen_tt
+		}
+		ai_will_do = {
+			factor = 0
+		}	
+    }
+	SPO_loyalty_test_Vasya = {
+		icon = generic_formable_nations
+		fire_only_once = yes
+		available = {
+			SPO_Vasya = {
+				is_advisor = yes
+			}
+		}
+		visible = {
+			SPO_Vasya = {
+				is_advisor = yes
+			}
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = SPO_loyalty_test_Vasya_tt
+		}
+		ai_will_do = {
+			factor = 0
+		}	
+    }
+}

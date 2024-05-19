@@ -12,6 +12,9 @@ focus_tree = {
 		x = 2000
 		y = 0
 	}
+	initial_show_position = {
+		focus = SPO_uno_elections
+	}
 #Uno
     focus = {
 		id = SPO_uno_elections
@@ -142,6 +145,12 @@ focus_tree = {
 		icon = GFX_SPO_build_oven
 		x = 5
 		y = 0
+		offset = {
+			trigger = {
+				has_country_flag = SPO_no_bogdan_flag
+			}
+			x = 8
+		}
 		allow_branch = {
 			has_country_flag = SPO_uno_elections_flag
 		}
@@ -200,7 +209,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SPO_build_oven
 		}
-		cost = 1
+		cost = 0.5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -262,14 +271,30 @@ focus_tree = {
 		completion_reward = {
 			add_opinion_modifier = {
 				target = SAD
-				modifier = SAD_we_are_explored
+				modifier = SAD_we_are_explored_opinion_modifier
 			}
 			SAD = {
 				add_opinion_modifier = {
 					target = SPO
-					modifier = SAD_we_are_explored
+					modifier = SAD_we_are_explored_opinion_modifier
 				}
 			}
+		}
+	}
+	focus = {
+		id = SPO_bottle_crusade
+		icon = GFX_SPO_bottle_crusade
+		x = 0
+		y = 1
+		relative_position_id = SPO_Sad_explored
+		prerequisite = {
+			focus = SPO_Sad_explored
+		}
+		cost = 0.5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
 			hidden_effect = {
 				if = {
 					limit = {
@@ -284,15 +309,32 @@ focus_tree = {
 						days = 1
 					}
 				}
+				random_list = {
+					50 = {
+						add_resource = {
+							type = chromium
+							amount = 7
+							state = 9
+						}
+						add_resource = {
+							type = rubber
+							amount = 2
+							state = 9
+						}
+					}
+					50 = {
+					}
+				}
 			}
+			custom_effect_tooltip = SPO_bottle_crusade_tt
 		}
 	}
 #bogdan revolution
 	focus = {
 		id = SPO_Bogdan_revolution
 		icon = GFX_SPO_Bogdan_revolution
-		x = 0
-		y = 1
+		x = 4
+		y = 0
 		available = {
 			
 		}
@@ -305,11 +347,300 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = SPO_Bogdan_revolution_tt
-			hidden_effect = {
-				28 = {
-					transfer_state_to = UPA
-				}
+		}
+	}
+	focus = {
+		id = SPO_without_Bogdan
+		icon = GFX_SPO_without_Bogdan
+		relative_position_id = SPO_Bogdan_revolution
+		prerequisite = {
+			focus = SPO_Bogdan_revolution
+		}
+		x = -4
+		y = 1
+		available = {
+			has_country_flag = SPO_without_bogdan_flag
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			custom_effect_tooltip = SPO_without_Bogdan_focus_tt
+		}
+	}
+
+	focus = {
+		id = SPO_anti_Bogdan_propaganda
+		icon = GFX_SPO_anti_Bogdan_propaganda
+		relative_position_id = SPO_without_Bogdan
+		prerequisite = {
+			focus = SPO_without_Bogdan
+		}
+		x = 0
+		y = 1
+		available = {
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_opinion_modifier = {
+				target = ANA
+				modifier = anti_Bogdan_propaganda_opinion_modifier
 			}
 		}
 	}
+
+	focus = {
+		id = SPO_stagnation
+		icon = GFX_SPO_stagnation
+		relative_position_id = SPO_without_Bogdan
+		prerequisite = {
+			focus = SPO_anti_Bogdan_propaganda
+		}
+		x = 0
+		y = 2
+		available = {
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		select_effect = {
+			add_ideas = SPO_stagnation_idea
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SPO_Bogdan_sorry
+		icon = GFX_SPO_Bogdan_sorry
+		relative_position_id = SPO_Bogdan_revolution
+		prerequisite = {
+			focus = SPO_Bogdan_revolution
+		}
+		x = 0
+		y = 1
+		available = {
+			has_country_flag = SPO_bogdan_sorry_flag
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_political_power = -100
+				add_stability = -0.02
+			}
+			custom_effect_tooltip = SPO_Bogdan_sorry_focus_tt
+		}
+	}
+
+	focus = {
+		id = SPO_loyalty_test
+		icon = GFX_SPO_loyalty_test
+		relative_position_id = SPO_Bogdan_sorry
+		prerequisite = {
+			focus = SPO_Bogdan_sorry
+		}
+		x = -2
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_stability = -0.02
+			}
+			unlock_decision_category_tooltip = SPO_loyalty_test_category
+		}
+	}
+
+	focus = {
+		id = SPO_dust
+		icon = GFX_SPO_dust
+		relative_position_id = SPO_Bogdan_sorry
+		prerequisite = {
+			focus = SPO_loyalty_test
+		}
+		available = {
+			has_decision = SPO_loyalty_test_Arsen
+			has_decision = SPO_loyalty_test_Nazar
+			has_decision = SPO_loyalty_test_Kirill
+			has_decision = SPO_loyalty_test_Vasya
+		}
+		x = -2
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_stability = -0.02
+			}
+			unlock_decision_category_tooltip = SPO_loyalty_test_category
+		}
+	}
+
+	focus = {
+		id = SPO_stalking_Bogdan
+		icon = GFX_SPO_stalking_Bogdan
+		relative_position_id = SPO_Bogdan_sorry
+		prerequisite = {
+			focus = SPO_Bogdan_sorry
+		}
+		available = {
+		}
+		x = 0
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_stability = -0.02
+				random_list = {
+					50 = {
+						country_event = {
+							id = spo.2
+							days = 1
+						}
+					}
+					50 = {
+						country_event = {
+							id = spo.3
+							days = 1
+						}
+					}
+				}
+			}
+			add_threat = 3
+			custom_effect_tooltip = SPO_stalking_Bogdan_tt
+		}
+	}
+
+	focus = {
+		id = SPO_ask_anarchists
+		icon = GFX_SPO_ask_anarchists
+		relative_position_id = SPO_Bogdan_sorry
+		prerequisite = {
+			focus = SPO_stalking_Bogdan
+		}
+		bypass = {
+			has_country_flag = SPO_stalking_failed_flag
+		}
+		available = {
+		}
+		x = 0
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_stability = -0.02
+			}
+			add_threat = -2
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = SPO_interview_Bogdan
+		icon = GFX_SPO_interview_Bogdan
+		relative_position_id = SPO_Bogdan_sorry
+		prerequisite = {
+			focus = SPO_Bogdan_sorry	
+		}
+		available = {
+		}
+		x = 2
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_stability = -0.02
+			}
+			country_event = {
+				id = spo.4
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = SPO_ask_to_come_back
+		icon = GFX_SPO_ask_to_come_back
+		relative_position_id = SPO_Bogdan_sorry
+		prerequisite = {
+			focus = SPO_Bogdan_sorry	
+		}
+		available = {
+			has_completed_focus = SPO_ask_anarchists
+			has_completed_focus = SPO_dust
+		}
+		x = 2
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_stability = -0.02
+			}
+			country_event = {
+				id = spo.5
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = SPO_Bogdan_is_back
+		icon = GFX_SPO_Bogdan_is_back
+		relative_position_id = SPO_Bogdan_sorry
+		prerequisite = {
+			focus = SPO_dust
+		}
+		prerequisite = {
+			focus = SPO_ask_anarchists
+		}
+		prerequisite = {
+			focus = SPO_ask_to_come_back
+		}
+		available = {
+			has_completed_focus = SPO_ask_anarchists
+			has_completed_focus = SPO_dust
+		}
+		x = 0
+		y = 3
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = SPO_no_bogdan
+					add_idea = SPO_bogdan
+				}
+				clr_country_flag = SPO_no_bogdan_flag	
+			}
+			custom_effect_tooltip = SPO_Bogdan_is_back_tt
+		}
+	}
+
 }

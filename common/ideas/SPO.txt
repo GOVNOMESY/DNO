@@ -79,6 +79,26 @@ ideas = {
 				custom_modifier_tooltip = SPO_no_bogdan_tt
 			}
 		}
+
+		SPO_stagnation_idea = {
+				
+			picture = SPO_stagnation
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+
+			
+			modifier = {
+				political_power_gain = -1.5
+			}
+		}
 				
 	}
 	
