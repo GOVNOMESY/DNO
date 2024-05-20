@@ -28,6 +28,7 @@ characters = {
 					is_country_leader = yes
 				}
 			}
+			can_be_fired = no
 		}
 		advisor = {
 			slot = army_chief
@@ -68,7 +69,7 @@ characters = {
 					is_country_leader = yes
 				}
 			}
-			cost = 0
+			can_be_fired = no
 		}
 
 		advisor = {
@@ -78,6 +79,7 @@ characters = {
 			traits = { 
 				army_chief_offensive_2
 			}
+			cost = 0
 		}
 	}
 
@@ -123,6 +125,7 @@ characters = {
 					is_country_leader = yes
 				}
 			}
+			can_be_fired = no
 		}
 	}
 
@@ -139,6 +142,7 @@ characters = {
 			traits = { 
 				roblox_player_trait
 			}
+			can_be_fired = no
 		}
 	}
 
@@ -155,6 +159,7 @@ characters = {
 			traits = { 
 				head_of_intelligence
 			}
+			can_be_fired = no
 		}
 	}
 }

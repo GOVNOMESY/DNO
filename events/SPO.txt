@@ -28,6 +28,7 @@ country_event = {
 			character = SPO_Nazar
 			slot = political_advisor
 		}
+		activate_advisor = SPO_Kirill
 	}
 	option = {
 		name = spo.0.b
@@ -70,6 +71,7 @@ country_event = {
 			character = SPO_Bogdan
 			slot = political_advisor
 		}
+		activate_advisor = SPO_Kirill
 	}
 }
 #Bogdan Revolution
@@ -85,14 +87,14 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = SPO_without_bogdan_flag
 		}
-		custom_effect_tooltip = SPO_without_bogdan_tt
+		unlock_national_focus = SPO_without_Bogdan
 	}
 	option = {
 		name = spo.1.b
 		hidden_effect = {
 			set_country_flag = SPO_bogdan_sorry_flag
 		}
-		custom_effect_tooltip = SPO_bogdan_sorry_tt
+		unlock_national_focus = SPO_Bogdan_sorry
 	}
 	immediate = {
 		hidden_effect = {
@@ -170,6 +172,6 @@ country_event = {
 	
 	option = {
 		name = spo.5.a
-		complete_national_focus = SPO_Bogdan_revolution
+		complete_national_focus = SPO_Bogdan_is_back
 	}
 }

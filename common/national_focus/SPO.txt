@@ -470,9 +470,11 @@ focus_tree = {
 			focus = SPO_loyalty_test
 		}
 		available = {
+			OR = {
+				has_decision = SPO_loyalty_test_Nazar
+				has_decision = SPO_loyalty_test_Kirill
+			}
 			has_decision = SPO_loyalty_test_Arsen
-			has_decision = SPO_loyalty_test_Nazar
-			has_decision = SPO_loyalty_test_Kirill
 			has_decision = SPO_loyalty_test_Vasya
 		}
 		x = -2
@@ -485,7 +487,8 @@ focus_tree = {
 			hidden_effect = {
 				add_stability = -0.02
 			}
-			unlock_decision_category_tooltip = SPO_loyalty_test_category
+			retire_character = SPO_Arsen
+			retire_character = SPO_Vasya
 		}
 	}
 
@@ -622,8 +625,7 @@ focus_tree = {
 			focus = SPO_ask_to_come_back
 		}
 		available = {
-			has_completed_focus = SPO_ask_anarchists
-			has_completed_focus = SPO_dust
+			always = no
 		}
 		x = 0
 		y = 3
@@ -640,6 +642,7 @@ focus_tree = {
 				clr_country_flag = SPO_no_bogdan_flag	
 			}
 			custom_effect_tooltip = SPO_Bogdan_is_back_tt
+			
 		}
 	}
 
