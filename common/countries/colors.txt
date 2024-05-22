@@ -42,6 +42,11 @@ GYP = {
 	color_ui = rgb { 137 123 0 }
 }
 
+SEC = {
+	color = rgb { 0 0 128 }
+	color_ui = rgb { 0 0 128 }
+}
+
 D01 = {
 	color = rgb { 122 179 97 }
 	color_ui = rgb { 159 233 126 }

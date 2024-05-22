@@ -1,0 +1,90 @@
+add_namespace = sudr
+add_namespace = sudr_hidden
+#Win in March on Factory
+country_event = {
+	id = sudr.1
+	title = sudr.1.t
+    desc = sudr.1.d
+	trigger = {
+		original_tag = SPO
+		SEC = {
+			surrender_progress > 0.5
+		}
+		SEC = {
+			has_war_with = SPO
+		}
+	}
+    fire_only_once = yes
+	
+	option = {
+		name = sudr.1.a
+		hidden_effect = {
+			white_peace = SEC
+			add_resource = {
+				type = rubber
+				amount = 20
+				state = 46
+			}
+			add_resource = {
+				type = steel
+				amount = 25
+				state = 46
+			}
+			add_resource = {
+				type = chromium
+				amount = 10
+				state = 46
+			}
+			delete_unit_template_and_units = {
+				division_template = "Crusaders"
+			}
+			SEC = {
+				delete_unit_template_and_units = {
+					division_template = "Security"
+				}
+			}
+			62 = {
+				transfer_state_to = UPA
+				remove_core_of = SEC
+			}
+		}
+		custom_effect_tooltip = SUDR_win_in_march_on_factory_tt
+	}
+}
+
+#Lost in March on Factory
+country_event = {
+	id = sudr.2
+	title = sudr.2.t
+    desc = sudr.2.d
+	trigger = {
+		original_tag = SPO
+		SPO = {
+			has_war_with = SEC
+			NOT = {
+				has_country_flag = SEC_march_on_factory_flag
+			}
+		}
+	}
+    fire_only_once = yes
+	
+	option = {
+		name = sudr.2.a
+		hidden_effect = {
+			white_peace = SEC
+			delete_unit_template_and_units = {
+				division_template = "Crusaders"
+			}
+			SEC = {
+				delete_unit_template_and_units = {
+					division_template = "Security"
+				}
+			}
+			62 = {
+				transfer_state_to = UPA
+				remove_core_of = SEC
+			}
+		}
+		custom_effect_tooltip = SUDR_lost_in_march_on_factory_tt
+	}
+}

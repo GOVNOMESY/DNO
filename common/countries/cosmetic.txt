@@ -1,0 +1,4 @@
+SPO_SUDR = {
+	color = rgb { 255 94 97 }
+	color_ui = rgb { 255 94 97 }
+}

@@ -1,0 +1,17 @@
+characters = {
+	SEC_security = {
+		name = SEC_security
+		portraits = {
+			civilian = {
+				large = GFX_SEC_security
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			traits = {
+			
+			}
+		}
+	}
+}
+	

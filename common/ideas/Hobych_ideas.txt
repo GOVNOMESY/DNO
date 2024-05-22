@@ -1,0 +1,34 @@
+ideas = {
+
+	country = {
+
+		Motivation_idea = {
+		
+			picture = Motivation_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+
+			
+			modifier = {
+				political_power_gain = 3
+				stability_factor = 0.4
+				war_support_factor = 0.4
+				production_speed_buildings_factor = 1
+				experience_gain_army = 0.5
+				production_factory_efficiency_gain_factor = 0.5
+			}
+		}
+				
+	}
+	
+
+}

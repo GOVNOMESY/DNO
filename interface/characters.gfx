@@ -36,6 +36,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_SUDR_Kirill"
+		texturefile = "gfx/leaders/SPO/SUDR_Kirill.png"
+	}
+
+	spriteType = {
+		name = "GFX_SUDR_Nazar"
+		texturefile = "gfx/leaders/SPO/SUDR_Nazar.png"
+	}
+
+	spriteType = {
 		name = "GFX_SPO_Anton"
 		texturefile = "gfx/leaders/SPO/SPO_Anton.png"
 	}
@@ -83,6 +93,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_GYP_gypsy"
 		texturefile = "gfx/leaders/GYP/GYP_gypsy.png"
+	}
+
+	spriteType = {
+		name = "GFX_SEC_security"
+		texturefile = "gfx/leaders/SEC/SEC_security.png"
 	}
 	
 }

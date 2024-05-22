@@ -1,0 +1,54 @@
+﻿division_template = {
+	name = "Crusaders"
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+		militia = { x = 0 y = 4 }
+		militia = { x = 1 y = 0 }
+	}
+	support = {
+
+	}
+}
+
+units = {
+	division = {
+		location = 15834
+		division_template = "Crusaders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		location = 15834
+		division_template = "Crusaders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		location = 10330
+		division_template = "Crusaders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		location = 10330
+		division_template = "Crusaders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		location = 5688
+		division_template = "Crusaders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		location = 15915
+		division_template = "Crusaders"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+}

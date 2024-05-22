@@ -153,6 +153,9 @@ focus_tree = {
 		}
 		allow_branch = {
 			has_country_flag = SPO_uno_elections_flag
+			NOT = {
+				has_country_flag = SPO_SUDR_flag
+			}
 		}
 		cost = 1
 		search_filters = {
@@ -341,6 +344,9 @@ focus_tree = {
 		}
 		allow_branch = {
 			has_country_flag = SPO_no_bogdan_flag
+			NOT = {
+				has_country_flag = SPO_SUDR_flag
+			}
 		}
 		cost = 1
 		search_filters = {
@@ -350,73 +356,7 @@ focus_tree = {
 			custom_effect_tooltip = SPO_Bogdan_revolution_tt
 		}
 	}
-	focus = {
-		id = SPO_without_Bogdan
-		icon = GFX_SPO_without_Bogdan
-		relative_position_id = SPO_Bogdan_revolution
-		prerequisite = {
-			focus = SPO_Bogdan_revolution
-		}
-		x = -4
-		y = 1
-		available = {
-			has_country_flag = SPO_without_bogdan_flag
-		}
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		completion_reward = {
-			custom_effect_tooltip = SPO_without_Bogdan_focus_tt
-		}
-	}
-
-	focus = {
-		id = SPO_anti_Bogdan_propaganda
-		icon = GFX_SPO_anti_Bogdan_propaganda
-		relative_position_id = SPO_without_Bogdan
-		prerequisite = {
-			focus = SPO_without_Bogdan
-		}
-		x = 0
-		y = 1
-		available = {
-		}
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		completion_reward = {
-			add_stability = -0.05
-			add_opinion_modifier = {
-				target = ANA
-				modifier = anti_Bogdan_propaganda_opinion_modifier
-			}
-		}
-	}
-
-	focus = {
-		id = SPO_stagnation
-		icon = GFX_SPO_stagnation
-		relative_position_id = SPO_without_Bogdan
-		prerequisite = {
-			focus = SPO_anti_Bogdan_propaganda
-		}
-		x = 0
-		y = 2
-		available = {
-		}
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		select_effect = {
-			add_ideas = SPO_stagnation_idea
-		}
-		completion_reward = {
-		}
-	}
-
+#Bogdan Sorry
 	focus = {
 		id = SPO_Bogdan_sorry
 		icon = GFX_SPO_Bogdan_sorry
@@ -491,8 +431,14 @@ focus_tree = {
 			hidden_effect = {
 				add_stability = -0.02
 			}
-			retire_character = SPO_Arsen
-			retire_character = SPO_Vasya
+			remove_advisor_role = {
+				slot = political_advisor
+				character = SPO_Arsen
+			}
+			remove_advisor_role = {
+				slot = political_advisor
+				character = SPO_Vasya
+			}
 		}
 	}
 
@@ -650,5 +596,311 @@ focus_tree = {
 			
 		}
 	}
+#Without Bogdan
+	focus = {
+		id = SPO_without_Bogdan
+		icon = GFX_SPO_without_Bogdan
+		relative_position_id = SPO_Bogdan_revolution
+		prerequisite = {
+			focus = SPO_Bogdan_revolution
+		}
+		x = -4
+		y = 1
+		available = {
+			has_country_flag = SPO_without_bogdan_flag
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			custom_effect_tooltip = SPO_without_Bogdan_focus_tt
+		}
+	}
 
+	focus = {
+		id = SPO_anti_Bogdan_propaganda
+		icon = GFX_SPO_anti_Bogdan_propaganda
+		relative_position_id = SPO_without_Bogdan
+		prerequisite = {
+			focus = SPO_without_Bogdan
+		}
+		x = 0
+		y = 1
+		available = {
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_opinion_modifier = {
+				target = ANA
+				modifier = anti_Bogdan_propaganda_opinion_modifier
+			}
+		}
+	}
+
+	focus = {
+		id = SPO_stagnation
+		icon = GFX_SPO_stagnation
+		relative_position_id = SPO_without_Bogdan
+		prerequisite = {
+			focus = SPO_anti_Bogdan_propaganda
+		}
+		x = 0
+		y = 2
+		available = {
+		}
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		select_effect = {
+			add_ideas = SPO_stagnation_idea
+			9 = {
+				set_demilitarized_zone = yes
+			}
+			8 = {
+				set_demilitarized_zone = yes
+			}
+			6 = {
+				set_demilitarized_zone = yes
+			}
+			8 = {
+				set_demilitarized_zone = yes
+			}
+			7 = {
+				set_demilitarized_zone = yes
+			}
+			5 = {
+				set_demilitarized_zone = yes
+			}
+			8 = {
+				set_demilitarized_zone = yes
+			}
+			10 = {
+				set_demilitarized_zone = yes
+			}
+			11 = {
+				set_demilitarized_zone = yes
+			}
+			12 = {
+				set_demilitarized_zone = yes
+			}
+			13 = {
+				set_demilitarized_zone = yes
+			}
+			14 = {
+				set_demilitarized_zone = yes
+			}
+			15 = {
+				set_demilitarized_zone = yes
+			}
+			18 = {
+				set_demilitarized_zone = yes
+			}
+			2 = {
+				set_demilitarized_zone = yes
+			}
+			3 = {
+				set_demilitarized_zone = yes
+			}
+			4 = {
+				set_demilitarized_zone = yes
+			}
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+				remove_ideas = SPO_stagnation_idea
+				set_country_flag = SPO_SUDR_flag
+				set_cosmetic_tag = SPO_SUDR
+				46 = {
+					transfer_state_to = SPO
+					add_core_of = SPO
+				}
+				9 = {
+					transfer_state_to = UPA
+					add_core_of = UPA
+				}	
+				set_portraits = {
+					character = SPO_Kirill
+					civilian = { large ="GFX_SUDR_Kirill" }
+				}
+				set_portraits = {
+					character = SPO_Nazar
+					civilian = { large ="GFX_SUDR_Nazar" }
+				}
+				remove_advisor_role = {
+					slot = political_advisor
+					character = SPO_Arsen
+				}
+				remove_advisor_role = {
+					slot = political_advisor
+					character = SPO_Vasya
+				}
+				remove_advisor_role = {
+					slot = political_advisor
+					character = SPO_Bogdan
+				}
+				mark_focus_tree_layout_dirty = yes
+				complete_national_focus = SUDR_our_ideology
+			}
+			custom_effect_tooltip = SPO_stagnation_tt
+		}
+	}
+#SUDR
+	focus = {
+		id = SUDR_our_ideology
+		icon = GFX_SUDR_our_ideology
+		allow_branch = {
+			has_country_flag = SPO_SUDR_flag
+			NOT = {
+				has_country_flag = SUDR_autumn_at_last_flag
+			}
+		}
+		x = 5
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SUDR_march_on_factory
+		icon = GFX_SUDR_march_on_factory
+		relative_position_id = SUDR_our_ideology
+		prerequisite = {
+			focus = SUDR_our_ideology
+		}
+		x = 0
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			hidden_effect = {
+				SEC = {
+					transfer_state = 62
+					load_oob = SEC_march_on_factory
+					set_country_flag = {
+						flag = SEC_march_on_factory_flag
+						days = 30
+					}
+				}
+				62 = {
+					add_core_of = SEC
+				}
+				declare_war_on = {
+					target = SEC
+					type = annex_everything					
+				}
+				set_province_controller = 10330
+				set_province_controller = 15834
+				set_province_controller = 15915
+				set_province_controller = 5688
+				load_oob = SUDR_march_on_factory
+			}
+			custom_effect_tooltip = SUDR_march_on_factory_tt
+		}
+	}
+
+	focus = {
+		id = SUDR_waiting_autumn
+		icon = GFX_SUDR_waiting_autumn
+		relative_position_id = SUDR_march_on_factory
+		prerequisite = {
+			focus = SUDR_march_on_factory
+		}
+		mutually_exclusive = {
+			focus = SUDR_nomads
+			focus = SUDR_debris_removal
+		}
+		available = {
+			
+		}
+		x = -2
+		y = 1
+		cost = 18
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SUDR_debris_removal
+		icon = GFX_SUDR_debris_removal
+		relative_position_id = SUDR_march_on_factory
+		prerequisite = {
+			focus = SUDR_march_on_factory
+		}
+		mutually_exclusive = {
+			focus = SUDR_waiting_autumn
+			focus = SUDR_nomads
+		}
+		available = {
+			always = no
+		}
+		x = 0
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = SUDR_nomads
+		icon = GFX_SUDR_nomads
+		relative_position_id = SUDR_march_on_factory
+		prerequisite = {
+			focus = SUDR_march_on_factory
+		}
+		mutually_exclusive = {
+			focus = SUDR_waiting_autumn
+			focus = SUDR_debris_removal
+		}
+		available = {
+			always = no
+		}
+		x = 2
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			set_country_flag = SUDR_autumn_at_last_flag
+		}
+	}
+#Autumn
+	focus = {
+		id = SUDR_autumn_at_last
+		icon = GFX_SUDR_autumn_at_last
+		allow_branch = {
+			has_country_flag = SUDR_autumn_at_last_flag
+		}
+		x = 5
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			
+		}
+	}
 }
