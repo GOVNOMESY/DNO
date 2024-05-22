@@ -1,7 +1,6 @@
 ﻿capital = 71
 
 
-set_convoys = 1
 	
 	set_technology = {
 		tech_support = 1

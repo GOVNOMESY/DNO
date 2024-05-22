@@ -307,6 +307,7 @@ focus_tree = {
 					country_event = {
 						id = spo.1
 						days = 1
+						hours = 15
 					}
 				}
 				random_list = {
@@ -470,12 +471,15 @@ focus_tree = {
 			focus = SPO_loyalty_test
 		}
 		available = {
-			OR = {
-				has_decision = SPO_loyalty_test_Nazar
-				has_decision = SPO_loyalty_test_Kirill
+			custom_trigger_tooltip = {
+				tooltip = SPO_dust_trigger_tt
+				OR = {
+					has_country_flag = SPO_loyalty_test_Nazar_flag
+					has_country_flag = SPO_loyalty_test_Kirill_flag
+				}
+				has_country_flag = SPO_loyalty_test_Arsen_flag
+				has_country_flag = SPO_loyalty_test_Vasya_flag
 			}
-			has_decision = SPO_loyalty_test_Arsen
-			has_decision = SPO_loyalty_test_Vasya
 		}
 		x = -2
 		y = 2
@@ -640,6 +644,7 @@ focus_tree = {
 					add_idea = SPO_bogdan
 				}
 				clr_country_flag = SPO_no_bogdan_flag	
+				mark_focus_tree_layout_dirty = yes
 			}
 			custom_effect_tooltip = SPO_Bogdan_is_back_tt
 			

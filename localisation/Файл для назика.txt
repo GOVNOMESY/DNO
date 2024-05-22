@@ -38,3 +38,4 @@
  spo.5.t:0 "YA EBAL VASHU MAMY"
  spo.5.d:0 "YA EBAL VASHU MAMY"
  spo.5.a:0 "YA EBAL VASHU MAMY"
+ SPO_dust_trigger_tt:0 ""

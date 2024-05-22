@@ -9,11 +9,3 @@ music = {
 		}		
 	}
 }
-music = {
-	song = "realhit"
-	chance = {
-		modifier = {
-			factor = 0.1
-		}		
-	}
-}
