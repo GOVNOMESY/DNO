@@ -33,7 +33,6 @@
  spo.3.a:0 "YA EBAL VASHU MAMY"
  SPO_stalking_failed_tt:0 "YA EBAL VASHU MAMY"
  spo.4.t:0 "YA EBAL VASHU MAMY"
- spo.4.d:0 "YA EBAL VASHU MAMY"
  spo.4.a:0 "YA EBAL VASHU MAMY"
  spo.5.t:0 "YA EBAL VASHU MAMY"
  spo.5.d:0 "YA EBAL VASHU MAMY"
