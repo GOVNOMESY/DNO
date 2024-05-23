@@ -728,10 +728,12 @@ focus_tree = {
 				set_portraits = {
 					character = SPO_Kirill
 					civilian = { large ="GFX_SUDR_Kirill" }
+					army = { large ="GFX_SUDR_Kirill" }
 				}
 				set_portraits = {
 					character = SPO_Nazar
 					civilian = { large ="GFX_SUDR_Nazar" }
+					army = { large ="GFX_SUDR_Nazar" }
 				}
 				remove_advisor_role = {
 					slot = political_advisor
