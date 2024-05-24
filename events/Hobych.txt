@@ -11,11 +11,14 @@ news_event = {
 	option = {
 		name = hobych.1.a
 		add_timed_idea = {
-			idea = Worms_armageddon
+			idea = Worms_Armageddon
 			days = 90
 		}
 		set_global_flag = Worms_Armageddon_SE_flag
 		set_global_flag = Super_Event_visible
+		hidden_effect = {
+			play_song = Worms_Armageddon
+		}
 	}
 	immediate = {
 		hidden_effect = {

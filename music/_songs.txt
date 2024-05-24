@@ -13,8 +13,7 @@ music = {
 	song = "Worms_Armageddon"
 	chance = {
 		modifier = {
-			factor = 100
-			has_global_flag = Worms_Armageddon_SE_flag
+			factor = 0
 		}		
 	}
 }

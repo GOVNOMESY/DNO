@@ -28,9 +28,9 @@ ideas = {
 			}
 		}
 
-		Worms_armageddon = {
+		Worms_Armageddon = {
 						
-			picture = SAD_worms_armageddon
+			picture = SAD_Worms_Armageddon
 			
 			allowed = {
 				always = no

@@ -23,8 +23,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/anarchist_angry.png"
 		
 	}	spriteType = {
-		name = "GFX_idea_SAD_worms_armageddon"
-		texturefile = "gfx/interface/ideas/worms_armageddon.png"
+		name = "GFX_idea_SAD_Worms_Armageddon"
+		texturefile = "gfx/interface/ideas/Worms_Armageddon.png"
 	}
 		spriteType = {
 		name = "GFX_idea_sworda"
