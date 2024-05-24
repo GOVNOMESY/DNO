@@ -37,7 +37,6 @@ recruit_character = SAD_Anton
 add_ideas = SAD_sword
 add_ideas = SAD_shield
 add_ideas = SAD_2_mans_1_country
-add_ideas = SAD_worms_armageddon
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"

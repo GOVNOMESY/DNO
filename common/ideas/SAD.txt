@@ -66,28 +66,6 @@ ideas = {
 				drift_defence_factor = 0.8
 			}
 		}
-
-		SAD_worms_armageddon = {
-						
-			picture = SAD_worms_armageddon
-			
-			allowed = {
-				always = no
-			}
-	
-			allowed_civil_war = {
-				always = yes
-			}
-	
-			removal_cost = -1
-	
-	
-				
-			modifier = {
-				political_power_gain = -1
-				stability_weekly = -0.05
-			}
-		}
 				
 	}
 				

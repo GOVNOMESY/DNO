@@ -1,0 +1,33 @@
+#Titles
+defined_text = {
+    name = get_super_event_title
+	
+    text = {
+        trigger = {
+            has_global_flag = Worms_Armageddon_SE_flag
+        }
+        localization_key = "Worms_Armageddon_SE_title"
+    }
+}
+#Quotes
+defined_text = {
+    name = get_super_event_quote
+	
+    text = {
+        trigger = {
+            has_global_flag = Worms_Armageddon_SE_flag
+        }
+        localization_key = "Worms_Armageddon_SE_quote"
+    }
+}
+#Remarks
+defined_text = {
+    name = get_super_event_remark
+	
+    text = {
+        trigger = {
+            has_global_flag = Worms_Armageddon_SE_flag
+        }
+        localization_key = "Worms_Armageddon_SE_remark"
+    }
+}

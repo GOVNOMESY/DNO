@@ -27,6 +27,28 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.5
 			}
 		}
+
+		Worms_armageddon = {
+						
+			picture = SAD_worms_armageddon
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+	
+	
+				
+			modifier = {
+				political_power_gain = -1
+				stability_weekly = -0.05
+			}
+		}
 				
 	}
 	

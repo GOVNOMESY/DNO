@@ -1,0 +1,28 @@
+add_namespace = hobych
+add_namespace = hobych_hidden
+#Hobych attack by Worms Armageddon
+news_event = {
+	id = hobych.1
+	title = hobych.1.t
+    desc = hobych.1.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = hobych.1.a
+		add_timed_idea = {
+			idea = Worms_armageddon
+			days = 90
+		}
+		set_global_flag = Worms_Armageddon_SE_flag
+		set_global_flag = Super_Event_visible
+	}
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = hobych.1
+				days = 365
+			}
+		}
+	}
+}

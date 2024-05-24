@@ -1,0 +1,40 @@
+focus_tree = {
+	id = SAD_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 40
+			tag = SAD
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 2000
+		y = 0
+	}
+	initial_show_position = {
+		focus = SPO_uno_elections
+	}
+#Sad
+    focus = {
+		id = SPO_uno_elections
+		icon = GFX_SPO_uno_elections
+		x = 5
+		y = 0
+		cost = 212.6
+		allow_branch = {
+			NOT = {
+				has_country_flag = SPO_uno_elections_flag
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = {
+				id = spo.0
+				days = 0
+			}
+		}
+	}
+}

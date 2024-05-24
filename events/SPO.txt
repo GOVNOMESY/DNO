@@ -10,6 +10,9 @@ country_event = {
 	
 	option = {
 		name = spo.0.a
+		ai_chance = {
+			base = 5
+		}
 		hidden_effect = {
 			complete_national_focus = SPO_Nazar_victory
 			set_country_flag = SPO_uno_elections_flag
@@ -32,6 +35,9 @@ country_event = {
 	}
 	option = {
 		name = spo.0.b
+		ai_chance = {
+			base = 10
+		}
 		hidden_effect = {
 			complete_national_focus = SPO_Kirill_victory
 			set_country_flag = SPO_uno_elections_flag
@@ -53,6 +59,9 @@ country_event = {
 	}
 	option = {
 		name = spo.0.c
+		ai_chance = {
+			base = 0
+		}
 		hidden_effect = {
 			complete_national_focus = SPO_Bogdan_victory
 			set_country_flag = SPO_uno_elections_flag
@@ -84,6 +93,9 @@ country_event = {
 	
 	option = {
 		name = spo.1.a
+		ai_chance = {
+			base = 10
+		}
 		hidden_effect = {
 			set_country_flag = SPO_without_bogdan_flag
 		}
@@ -91,6 +103,9 @@ country_event = {
 	}
 	option = {
 		name = spo.1.b
+		ai_chance = {
+			base = 0
+		}
 		hidden_effect = {
 			set_country_flag = SPO_bogdan_sorry_flag
 		}
