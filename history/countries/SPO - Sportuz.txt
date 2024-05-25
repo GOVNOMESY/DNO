@@ -1,5 +1,10 @@
 ﻿capital = 9
+set_oob = SPO_2021
 complete_national_focus = SPO_uno_elections
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 2000
+}
 set_technology = {
 	tech_support = 1
 	tech_recon = 1

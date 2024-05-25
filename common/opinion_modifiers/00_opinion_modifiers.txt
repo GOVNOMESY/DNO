@@ -21,5 +21,13 @@ opinion_modifiers = {
 	Bogdan_stalking_opinion_modifier = {
 		value = -25
 	}
+
+	convict_Bogdan = {
+		value = 50
+	}
+
+	convict_SPO = {
+		value = 50
+	}
 	
 }

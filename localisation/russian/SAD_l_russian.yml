@@ -1,8 +1,16 @@
 ﻿l_russian:
+#ideas
 SAD_sword: "Меч"
 SAD_sword_desc: ""
 SAD_shield: "Щит"
 SAD_shield_desc: ""
+SAD_shield_2: "Прочный Щит"
+SAD_shield_2_desc: ""
 SAD_2_mans_1_country: "Страна из Двух Человек"
 SAD_2_mans_1_country_desc: "в стране есть только Антон и Костя"
+SAD_2_mans_1_country_2: "Страна из Двух Человек"
+SAD_2_mans_1_country_2_desc: "в стране есть только Антон и Костя"
 SAD_we_are_explored_opinion_modifier: "Мы не одни?"
+#country names
+SAD_sad_republic: "Садовая Республика"
+SAD_sad_republic_DEF: "Садовая Республика"

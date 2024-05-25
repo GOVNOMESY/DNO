@@ -5,11 +5,44 @@ characters = {
 			civilian = {
 				large = GFX_SAD_Anton
 			}
+			army = {
+				large = GFX_SAD_Anton
+			}
 		}
 		country_leader = {
 			ideology = liberalism
 			traits = {
 			
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 0
+		}
+	}
+
+	SAD_Nazar = {
+		name = SPO_Nazar
+		portraits = {
+			civilian = {
+				large = GFX_SPO_Nazar
+				small = GFX_SPO_Nazar_small
+			}
+			army = {
+				large = GFX_SPO_Nazar
+				small = GFX_SPO_Nazar_small
+			}
+		}
+	}
+
+	SAD_Vasya = {
+		name = SPO_Vasya
+		portraits = {
+			civilian = {
+				small = GFX_SPO_Vasya_small
 			}
 		}
 	}

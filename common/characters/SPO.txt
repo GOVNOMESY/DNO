@@ -84,7 +84,7 @@ characters = {
 	}
 
 	SPO_Anton = {
-		name = SPO_Anton
+		name = SAD_Anton
 		portraits = {
 			civilian = {
 				large = GFX_SPO_Anton

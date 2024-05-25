@@ -1,0 +1,14 @@
+SAD_dealing_category = {
+	icon = SAD_dealing_icon
+	priority = 90
+	allowed = {
+		original_tag = SAD
+	}
+	available = {
+		original_tag = SAD
+	}
+	visible = {
+		original_tag = SAD
+	}
+	visible_when_empty = no
+}

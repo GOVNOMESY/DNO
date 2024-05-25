@@ -30,6 +30,7 @@ idea_categories = {
 		character_slot = political_advisor
 		character_slot = political_advisor
 		character_slot = political_advisor
+		character_slot = political_advisor
 		
 		ledger = civilian
 		

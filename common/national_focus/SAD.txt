@@ -1,0 +1,522 @@
+focus_tree = {
+	id = SAD_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 40
+			tag = SAD
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 2000
+		y = 0
+	}
+	initial_show_position = {
+		focus = SAD_dealing_with_pigs
+	}
+#Sad
+    focus = {
+		id = SAD_dealing_with_pigs
+		icon = GFX_SAD_dealing_with_pigs
+		x = 5
+		y = 0
+		cost = 1
+		allow_branch = {
+			NOT = {
+				has_country_flag = SAD_ogo_pohui_flag
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			unlock_decision_tooltip = SAD_dealing_with_pigs
+		}
+	}
+
+	focus = {
+		id = SAD_dealing_with_geese
+		icon = GFX_SAD_dealing_with_geese
+		relative_position_id = SAD_dealing_with_pigs
+		x = 2
+		y = 0
+		cost = 1
+		allow_branch = {
+			NOT = {
+				has_country_flag = SAD_ogo_pohui_flag
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			unlock_decision_tooltip = SAD_dealing_with_geese
+		}
+	}
+
+	focus = {
+		id = SAD_sad_republic
+		icon = GFX_SAD_sad_republic
+		relative_position_id = SAD_dealing_with_pigs
+		x = 1
+		y = 1
+		cost = 1
+		prerequisite = {
+			focus = SAD_dealing_with_geese
+			focus = SAD_dealing_with_pigs
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAD_shield
+				add_idea = SAD_shield_2
+			}
+			set_cosmetic_tag = SAD_sad_republic
+		}
+	}
+
+	focus = {
+		id = SAD_sad_is_cuming
+		icon = GFX_SAD_sad_is_cuming
+		relative_position_id = SAD_sad_republic
+		x = 0
+		y = 1
+		cost = 1
+		prerequisite = {
+			focus = SAD_sad_republic
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAD_2_mans_1_country
+				add_idea = SAD_2_mans_1_country_2
+			}
+		}
+	}
+
+	focus = {
+		id = SAD_cold_war_with_SPO
+		icon = GFX_SAD_cold_war_with_SPO
+		relative_position_id = SAD_sad_is_cuming
+		prerequisite = {
+			focus = SAD_sad_is_cuming
+		}
+		available = {
+			always = no
+		}
+		x = -2
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SAD_ogo_pohui
+		icon = GFX_SAD_ogo_pohui
+		relative_position_id = SAD_sad_is_cuming
+		prerequisite = {
+			focus = SAD_sad_is_cuming
+		}
+		available = {
+			SPO = {
+				has_completed_focus = SPO_stagnation
+			}
+		}
+		x = 0
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			set_country_flag = SAD_ogo_pohui_flag
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	focus = {
+		id = SAD_weapon_trade
+		icon = GFX_SAD_weapon_trade
+		relative_position_id = SAD_sad_is_cuming
+		prerequisite = {
+			focus = SAD_sad_is_cuming
+		}
+		available = {
+			always = no
+		}
+		x = 2
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		}
+	}
+#ogo pohui
+    focus = {
+		id = SAD_convict_bogdan
+		icon = GFX_SAD_convict_bogdan
+		x = 5
+		y = 0
+		cost = 1
+		allow_branch = {
+			has_country_flag = SAD_ogo_pohui_flag
+		}
+		mutually_exclusive = {
+			focus = SAD_convict_SPO
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = SAD
+				modifier = convict_Bogdan
+			}
+			SPO = {
+				add_opinion_modifier = {
+					target = SAD
+					modifier = convict_Bogdan
+				}
+			}			
+		}
+	}
+
+	focus = {
+		id = SAD_convict_SPO
+		icon = GFX_SAD_convict_SPO
+		relative_position_id = SAD_convict_bogdan
+		x = 2
+		y = 0
+		cost = 1
+		allow_branch = {
+			has_country_flag = SAD_ogo_pohui_flag
+		}
+		mutually_exclusive = {
+			focus = SAD_convict_bogdan
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = SAD
+				modifier = convict_SPO
+			}
+			ANA = {
+				add_opinion_modifier = {
+					target = SAD
+					modifier = convict_SPO
+				}
+			}		
+		}
+	}
+
+	focus = {
+		id = SAD_catapult_plan
+		icon = GFX_SAD_catapult_plan
+		relative_position_id = SAD_convict_bogdan
+		prerequisite = {
+			focus = SAD_convict_SPO
+			focus = SAD_convict_bogdan
+		}
+		x = 1
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = Motivation_idea
+				days = 20
+			}
+		}
+	}
+
+	focus = {
+		id = SAD_pull_out_weapons
+		icon = GFX_SAD_pull_out_weapons
+		relative_position_id = SAD_catapult_plan
+		prerequisite = {
+			focus = SAD_catapult_plan
+		}
+		x = -1
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+		}
+	}
+
+	focus = {
+		id = SAD_close_catapult_plan
+		icon = GFX_SAD_close_catapult_plan
+		relative_position_id = SAD_pull_out_weapons
+		prerequisite = {
+			focus = SAD_pull_out_weapons
+		}
+		mutually_exclusive = {
+			focus = SAD_construct_catapult_plan
+		}
+		x = -2
+		y = 1
+		cost = 0.5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = Motivation_idea
+				}
+				remove_ideas = Motivation_idea
+			}
+		}
+	}
+
+	focus = {
+		id = SAD_construct_catapult_plan
+		icon = GFX_SAD_construct_catapult_plan
+		relative_position_id = SAD_pull_out_weapons
+		prerequisite = {
+			focus = SAD_pull_out_weapons
+		}
+		mutually_exclusive = {
+			focus = SAD_close_catapult_plan
+		}
+		x = 0
+		y = 1
+		cost = 5.8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 800
+			}
+		}
+	}
+
+	focus = {
+		id = SAD_treaty_with_nazar
+		icon = GFX_SAD_treaty_with_nazar
+		relative_position_id = SAD_catapult_plan
+		prerequisite = {
+			focus = SAD_catapult_plan
+		}
+		x = 1
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			SAD_Nazar = {
+				add_advisor_role = {
+					advisor = {
+						slot = political_advisor
+						idea_token = SPO_Nazar
+						traits = { 
+							investor_trait
+						}
+						available = {
+							NOT = {
+								is_country_leader = yes
+							}
+						}
+						can_be_fired = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SAD_mobilization_of_vasya
+		icon = GFX_SAD_mobilization_of_vasya
+		relative_position_id = SAD_catapult_plan
+		prerequisite = {
+			focus = SAD_treaty_with_nazar
+		}
+		x = 1
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			SAD_Vasya = {
+				add_advisor_role = {
+					advisor = {
+						slot = political_advisor
+						idea_token = SPO_Vasya
+						traits = { 
+							head_of_intelligence
+						}
+						can_be_fired = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SAD_prepare_revolution
+		icon = GFX_SAD_prepare_revolution
+		relative_position_id = SAD_mobilization_of_vasya
+		prerequisite = {
+			focus = SAD_close_catapult_plan
+			focus = SAD_construct_catapult_plan
+		}
+		prerequisite = {
+			focus = SAD_mobilization_of_vasya
+		}
+		x = -1
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			SPO = {
+				SAD_Nazar = {
+					remove_trait = {
+						trait = investor_trait
+					}
+					add_trait = {
+						trait = SPO_revolutionary
+					}
+					if = {
+						limit = { 
+							is_advisor = yes
+						}
+						remove_advisor_role = {
+							slot = political_advisor
+						}
+						add_advisor_role = {
+							advisor = {
+								slot = political_advisor
+								idea_token = SPO_Nazar
+								traits = { 
+									SPO_revolutionary
+								}
+								available = {
+									NOT = {
+										is_country_leader = yes
+									}
+								}
+								can_be_fired = no
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SAD_join_SPO
+		icon = GFX_SAD_join_SPO
+		relative_position_id = SAD_prepare_revolution
+		prerequisite = {
+			focus = SAD_prepare_revolution
+		}
+		x = 0
+		y = 1
+		cost = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		select_effect = {
+			country_event = {
+				id = sad.1
+				days = 8
+			}
+		}
+		completion_reward = {
+			SPO_Anton = {
+				add_advisor_role = {
+					advisor = {
+						slot = political_advisor
+						idea_token = SPO_Anton
+						traits = { 
+							SPO_revolutionary
+						}
+						can_be_fired = no
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = SAD_dissolution_of_SAD
+		icon = GFX_SAD_dissolution_of_SAD
+		relative_position_id = SAD_prepare_revolution
+		prerequisite = {
+			focus = SAD_prepare_revolution
+		}
+		available = {
+			SPO = {
+				has_completed_focus = SUDR_autumn_at_last
+			}
+		}
+		x = 0
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			if = {
+				limit = { 
+					has_country_flag = SAD_peace_revolution_flag
+				}	
+			}
+			else_if = {
+				limit = { 
+					has_country_flag = SAD_war_revolution_flag
+				}
+			}
+
+			if = {
+				limit = { 
+					has_country_flag = SAD_democracy_revolution_flag
+				}
+			}
+			else_if = {
+				limit = { 
+					has_country_flag = SAD_oligarchy_revolution_flag
+				}
+			}
+
+			if = {
+				limit = { 
+					has_country_flag = SAD_nazar_flag_revolution_flag
+				}
+			}
+			else_if = {
+				limit = { 
+					has_country_flag = SAD_anton_flag_revolution_flag
+				}
+			}
+		}
+	}
+}

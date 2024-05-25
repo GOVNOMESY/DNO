@@ -4,8 +4,8 @@ ANA = {
 	color_ui = rgb { 255 255 0 }
 	}
 SAD = {
-	color = rgb { 26 122 34 }
-	color_ui = rgb { 26 122 34 }
+	color = rgb { 124 150 120 }
+	color_ui = rgb { 124 150 120 }
 }
 SPO = {
 	color = rgb { 188 94 0 }

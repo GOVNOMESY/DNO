@@ -44,6 +44,28 @@ ideas = {
 			}
 		}
 
+		SAD_shield_2 = {
+			
+			picture = shielda
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+
+			
+			modifier = {
+				army_defence_factor = 0.06
+				army_core_defence_factor = 0.1
+			}
+		}
+
 		SAD_2_mans_1_country = {
 			
 			picture = two_mens
@@ -57,13 +79,40 @@ ideas = {
 			}
 	
 			removal_cost = -1
+			
 	
 	
 				
 			modifier = {
 				stability_factor = 0.9
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = -0.4
 				drift_defence_factor = 0.8
+				conscription = 0.02
+			}
+		}
+
+		SAD_2_mans_1_country_2 = {
+			
+			picture = two_mens
+			
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			
+	
+	
+				
+			modifier = {
+				stability_factor = 0.9
+				production_speed_buildings_factor = -0.4
+				drift_defence_factor = 0.8
+				conscription = 0.04
 			}
 		}
 				

@@ -1,0 +1,46 @@
+SAD_dealing_category = {
+	SAD_dealing_with_pigs = {
+		icon = generic_formable_nations
+		fire_only_once = yes
+		days_remove = 8
+		cost = 0
+		available = {
+			has_completed_focus = SAD_dealing_with_pigs
+			divisions_in_state = {
+				size > 1
+				state = 34
+			}
+		}
+	
+		remove_effect = {
+			SAD_Anton = {
+				add_logistics = 2
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}	
+    }
+	SAD_dealing_with_geese = {
+		icon = generic_formable_nations
+		fire_only_once = yes
+		days_remove = 8
+		cost = 0
+		available = {
+			has_completed_focus = SAD_dealing_with_geese
+			divisions_in_state = {
+				size > 1
+				state = 78
+			}
+		}
+	
+		remove_effect = {
+			SAD_Anton = {
+				add_attack = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}	
+    }
+}

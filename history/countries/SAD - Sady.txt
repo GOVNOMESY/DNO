@@ -1,6 +1,13 @@
 ﻿capital = 34
-
-
+set_oob = SAD_2021
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 5000
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment
+	amount = 400
+}
 
 set_technology = {
 	tech_support = 1

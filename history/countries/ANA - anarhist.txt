@@ -1,6 +1,9 @@
 ﻿capital = 21
-
-	
+set_oob = ANA_2021
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 2000
+}
 	set_technology = {
 		tech_support = 1
 		tech_recon = 1

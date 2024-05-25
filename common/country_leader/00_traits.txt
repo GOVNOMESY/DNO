@@ -10675,4 +10675,12 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	SPO_revolutionary = {
+		random = no
+		stability_factor = -0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

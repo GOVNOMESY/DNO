@@ -1,0 +1,96 @@
+add_namespace = sad
+add_namespace = sad_hidden
+#War or Peace
+country_event = {
+	id = sad.1
+	title = sad.1.t
+    desc = sad.1.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = sad.1.a
+		set_country_flag = SAD_war_revolution_flag
+		country_event = {
+			id = sad.2
+			days = 4
+		}
+	}
+
+	option = {
+		name = sad.1.b
+		if = {
+			limit = { 
+				NOT = {
+					SPO_Nazar = {
+						is_country_leader = yes
+					}
+				}
+			}
+			set_country_flag = SAD_peace_revolution_flag
+			country_event = {
+				id = sad.2
+				days = 4
+			}
+		}
+	}
+}
+#Democracy or Oligarchy
+country_event = {
+	id = sad.2
+	title = sad.2.t
+    desc = sad.2.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = sad.2.a
+		set_country_flag = SAD_democracy_revolution_flag
+		country_event = {
+			id = sad.3
+			days = 4
+		}
+	}
+
+	option = {
+		name = sad.2.b
+		set_country_flag = SAD_oligarchy_revolution_flag
+		country_event = {
+			id = sad.3
+			days = 4
+		}
+	}
+}
+
+#Nazar or Anton flag
+country_event = {
+	id = sad.3
+	title = sad.3.t
+    desc = sad.3.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = sad.3.a
+		set_country_flag = SAD_nazar_flag_revolution_flag
+	}
+
+	option = {
+		name = sad.3.b
+		set_country_flag = SAD_anton_flag_revolution_flag
+	}
+}
+
+#Join SPO
+country_event = {
+	id = sad.4
+	title = sad.4.t
+    desc = sad.4.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = sad.4.a
+		complete_national_focus = SAD_join_SPO
+	}
+}

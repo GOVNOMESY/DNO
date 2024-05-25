@@ -2,3 +2,7 @@ SPO_SUDR = {
 	color = rgb { 255 94 97 }
 	color_ui = rgb { 255 94 97 }
 }
+SAD_sad_republic = {
+	color = rgb { 26 122 34 }
+	color_ui = rgb { 26 122 34 }
+}
