@@ -40,7 +40,8 @@ set_technology = {
 	dispersed_industry2 = 1
 }
 recruit_character = SAD_Anton
-
+recruit_character = SAD_Nazar
+recruit_character = SAD_Vasya
 add_ideas = SAD_sword
 add_ideas = SAD_shield
 add_ideas = SAD_2_mans_1_country

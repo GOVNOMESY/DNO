@@ -180,7 +180,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_opinion_modifier = {
-				target = SAD
+				target = SPO
 				modifier = convict_Bogdan
 			}
 			SPO = {
@@ -210,7 +210,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_opinion_modifier = {
-				target = SAD
+				target = ANA
 				modifier = convict_SPO
 			}
 			ANA = {
@@ -333,7 +333,7 @@ focus_tree = {
 				add_advisor_role = {
 					advisor = {
 						slot = political_advisor
-						idea_token = SPO_Nazar
+						idea_token = SAD_Nazar
 						traits = { 
 							investor_trait
 						}
@@ -367,7 +367,7 @@ focus_tree = {
 				add_advisor_role = {
 					advisor = {
 						slot = political_advisor
-						idea_token = SPO_Vasya
+						idea_token = SAD_Vasya
 						traits = { 
 							head_of_intelligence
 						}
@@ -397,35 +397,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			SPO = {
-				SAD_Nazar = {
+				SPO_Nazar = {
 					remove_trait = {
 						trait = investor_trait
 					}
 					add_trait = {
 						trait = SPO_revolutionary
-					}
-					if = {
-						limit = { 
-							is_advisor = yes
-						}
-						remove_advisor_role = {
-							slot = political_advisor
-						}
-						add_advisor_role = {
-							advisor = {
-								slot = political_advisor
-								idea_token = SPO_Nazar
-								traits = { 
-									SPO_revolutionary
-								}
-								available = {
-									NOT = {
-										is_country_leader = yes
-									}
-								}
-								can_be_fired = no
-							}
-						}
 					}
 				}
 			}
@@ -471,7 +448,7 @@ focus_tree = {
 		icon = GFX_SAD_dissolution_of_SAD
 		relative_position_id = SAD_prepare_revolution
 		prerequisite = {
-			focus = SAD_prepare_revolution
+			focus = SAD_join_SPO
 		}
 		available = {
 			SPO = {

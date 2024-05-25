@@ -77,7 +77,7 @@ spo.1.b:0 "Заставить Назара извинится"
  roblox_player_trait_tt:0 "Он играет в Роблокс"
 
 #decisions
- SPO_loyalty_test_category:0 "Проверка на Лояльность"
+ SPO_loyalty_test_category:0 "Проверка на Верность"
  SPO_loyalty_test_Nazar:0 "Проверить §gНазара§!"
  SPO_loyalty_test_Nazar_tt:0 "§gНазар§! будет проверен"
  SPO_loyalty_test_Kirill:0 "Проверить §RКирилла§!"

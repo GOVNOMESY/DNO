@@ -542,7 +542,7 @@ focus_tree = {
 		icon = GFX_SPO_ask_to_come_back
 		relative_position_id = SPO_Bogdan_sorry
 		prerequisite = {
-			focus = SPO_Bogdan_sorry	
+			focus = SPO_interview_Bogdan	
 		}
 		available = {
 			has_completed_focus = SPO_ask_anarchists
@@ -753,6 +753,10 @@ focus_tree = {
 				}
 				mark_focus_tree_layout_dirty = yes
 				complete_national_focus = SUDR_our_ideology
+				delete_unit_template_and_units = {
+					division_template = "Hobos"
+				}
+				load_oob = SUDR_2021
 			}
 			custom_effect_tooltip = SPO_stagnation_tt
 		}
