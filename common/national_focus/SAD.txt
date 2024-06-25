@@ -466,10 +466,24 @@ focus_tree = {
 				limit = { 
 					has_country_flag = SAD_peace_revolution_flag
 				}	
+				random_list = {
+					70 = {
+						
+					}
+					30 = {
+
+					}
+				}
 			}
 			else_if = {
 				limit = { 
 					has_country_flag = SAD_war_revolution_flag
+				}
+				SAD = {
+					declare_war_on = {
+						target = SPO
+						type = topple_government
+					}
 				}
 			}
 

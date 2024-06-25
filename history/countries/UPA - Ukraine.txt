@@ -1,6 +1,7 @@
 ﻿capital = 1
 
 set_technology = {
+	samokat_infantry = 1
 	tech_support = 1
 	tech_recon = 1
 	support_weapons = 1
