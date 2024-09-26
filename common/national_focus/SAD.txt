@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 40
-			tag = SAD
+			original_tag = SAD
 		}
 	}
 	default = no
@@ -337,15 +337,11 @@ focus_tree = {
 						traits = { 
 							investor_trait
 						}
-						available = {
-							NOT = {
-								is_country_leader = yes
-							}
-						}
 						can_be_fired = no
 					}
 				}
 			}
+			activate_advisor = SAD_Nazar
 		}
 	}
 
@@ -375,6 +371,7 @@ focus_tree = {
 					}
 				}
 			}
+			activate_advisor = SAD_Vasya
 		}
 	}
 

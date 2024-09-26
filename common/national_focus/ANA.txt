@@ -1,0 +1,46 @@
+focus_tree = {
+	id = ANA_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			original_tag = ANA
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 2000
+		y = 0
+	}
+	initial_show_position = {
+		focus = ANA_yura
+	}
+
+	focus = {
+		id = ANA_yura
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ANA_serega
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+}

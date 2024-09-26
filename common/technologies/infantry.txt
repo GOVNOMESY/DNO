@@ -2040,10 +2040,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 2
-			modifier = {
-				tag = USA
-				factor = 2
-			}
 		}
 	}
 
